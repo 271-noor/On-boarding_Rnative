@@ -8,6 +8,7 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { View } from 'react-native';
+import AppNavigation from '@/navigation/appNavigation';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -37,6 +38,6 @@ export default function RootLayout() {
     //   <StatusBar style="auto" />
     // </ThemeProvider>
 
-    <View>hello</View>
+    <AppNavigation />
   );
 }
